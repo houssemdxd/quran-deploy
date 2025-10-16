@@ -9,8 +9,8 @@ import { AccessToken } from 'livekit-server-sdk';
 
 @Controller('token')
 export class LivekitController {
-  private readonly apiKey = process.env.LIVEKIT_API_KEY || 'devkey';
-  private readonly apiSecret = process.env.LIVEKIT_API_SECRET || 'secret';
+  private readonly apiKey = 'devkey';
+  private readonly apiSecret = 'devsecret';
 
   @Get()
   async getToken(
